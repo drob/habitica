@@ -18,6 +18,8 @@ export const nameFields = 'profile.name auth.local.username flags.verifiedUserna
 
 export { schema };
 
+// mongoose.set('debug', true);
+
 export const model = mongoose.model('User', schema);
 
 // Initially export an empty object so external requires will get
