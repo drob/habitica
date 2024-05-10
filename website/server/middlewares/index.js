@@ -126,5 +126,6 @@ export default function attachMiddlewares (app, server) {
   app.use(notFoundHandler);
 
   // Error handler middleware, define as the last one.
-  app.use(errorHandler);
+  // Disabled so that errors bubble up and are logged.
+  // app.use(errorHandler);
 }
